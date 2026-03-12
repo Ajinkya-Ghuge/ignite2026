@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Header from '@/components/Header'
 import './team.css'
 
 export default function TeamPage() {
@@ -13,35 +14,8 @@ export default function TeamPage() {
         <div className="bg-orb orb-3"></div>
       </div>
 
-      {/* Navigation - Same as HeroSection */}
-      <nav className="hero-nav">
-        <div className="logo-container">
-          <Image
-            src="/images/ig_logo.png"
-            alt="Ignite Logo"
-            width={150}
-            height={150}
-            className="logo"
-          />
-        </div>
-        
-        <ul className="nav-menu">
-          {[
-            { name: 'Home', href: '/' },
-            { name: 'About us', href: '/#about-us' },
-            { name: 'Event', href: '/#event' },
-            { name: 'Team', href: '/team' },
-            { name: 'Contact', href: '/#contact' }
-          ].map((item) => (
-            <li key={item.name}>
-              <a href={item.href} className="nav-link">
-                {item.name}
-                <span className="nav-underline" />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      {/* Navigation - Shared Header */}
+      <Header />
 
       {/* Main Content */}
       <div className="team-content">

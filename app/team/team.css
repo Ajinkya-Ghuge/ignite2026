@@ -74,16 +74,21 @@
   align-items: center;
   justify-content: space-between;
   padding: 24px 80px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  z-index: 21;
 }
 
 .logo {
   transition: transform 0.3s ease;
   filter: drop-shadow(0 0 10px rgba(234, 179, 8, 0.3));
+  position: relative;
+  z-index: 21;
 }
 
 .logo:hover {
@@ -397,10 +402,28 @@
 @media (max-width: 768px) {
   .hero-nav {
     padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo-container {
+    order: 1;
+  }
+  
+  .logo {
+    width: 80px !important;
+    height: 80px !important;
   }
   
   .nav-menu {
+    order: 2;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
+  }
+  
+  .nav-link {
     font-size: 14px;
   }
   
@@ -415,6 +438,29 @@
   .teams-row {
     flex-direction: column;
     gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-nav {
+    padding: 0.75rem 1rem;
+  }
+  
+  .logo {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .nav-menu {
+    gap: 0.75rem;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  .team-title {
+    font-size: 1.5rem;
   }
 }
 

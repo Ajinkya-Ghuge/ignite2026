@@ -36,8 +36,7 @@ export default function EventSection() {
       <div className="event-container">
         {/* Title */}
         <h2 className="event-title">
-          From <span className="title-highlight">Classroom</span> to Community:<br />
-          Where Growth Happens.
+          <span className="title-highlight">Upcoming</span> Events
         </h2>
 
         {/* Description */}
@@ -84,6 +83,12 @@ export default function EventSection() {
                 </div>
 
                 <button className="register-btn">Register Now</button>
+                <button className="more-details-btn">
+                  More Details
+                  <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
             </div>
           ))}

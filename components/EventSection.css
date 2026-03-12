@@ -141,11 +141,46 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 12px;
 }
 
 .register-btn:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 20px rgba(243, 189, 81, 0.4);
+}
+
+/* More Details Button */
+.more-details-btn {
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 24px;
+  background: transparent;
+  color: #D4A574;
+  border: 1px solid #D4A574;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.more-details-btn:hover {
+  background: rgba(212, 165, 116, 0.1);
+  transform: translateX(4px);
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.more-details-btn:hover .arrow-icon {
+  transform: translateX(4px);
 }
 
 /* Responsive Design */

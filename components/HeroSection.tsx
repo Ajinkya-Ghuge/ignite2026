@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import './HeroSection.css'
 import { useEffect, useRef } from 'react'
+import Header from './Header'
 
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -46,37 +47,7 @@ export default function HeroSection() {
       </div>
 
       {/* Navigation */}
-      <nav className="hero-nav">
-        <div className="logo-container">
-          <Image
-            src="/images/ig_logo.png"
-            alt="Ignite Logo"
-            width={150}
-            height={150}
-            className="logo"
-          />
-        </div>
-        
-        <ul className="nav-menu">
-          {[
-            { name: 'Home', href: '#home' },
-            { name: 'About us', href: '#about-us' },
-            { name: 'Event', href: '#event' },
-            { name: 'Team', href: '/team' },
-            { name: 'Contact', href: '/contact' }
-          ].map((item) => (
-            <li key={item.name}>
-              <a
-                href={item.href}
-                className="nav-link"
-              >
-                {item.name}
-                <span className="nav-underline" />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <Header />
 
       {/* Hero Content */}
       <div className="hero-content">
