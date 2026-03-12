@@ -20,7 +20,7 @@ export default function Header() {
         <ul className="header-menu">
           {[
             { name: 'Home', href: '/' },
-            { name: 'About us', href: '/#about-us' },
+            { name: 'About us', href: '/about' },
             { name: 'Event', href: '/#event' },
             { name: 'Team', href: '/team' },
             { name: 'Contact', href: '/contact' }

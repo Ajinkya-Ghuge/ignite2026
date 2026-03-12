@@ -83,12 +83,12 @@ export default function EventSection() {
                 </div>
 
                 <button className="register-btn">Register Now</button>
-                <button className="more-details-btn">
+                <a href="/event-details" className="more-details-btn">
                   More Details
                   <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           ))}

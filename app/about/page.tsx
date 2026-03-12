@@ -1,9 +1,14 @@
-import React from 'react'
-import './About.css'
+'use client'
 
-const About: React.FC = () => {
+import Header from '@/components/Header'
+import Image from 'next/image'
+import './about.css'
+
+export default function AboutPage() {
   return (
     <div className="about-page">
+      <Header />
+      
       <section className="hero-section">
         <h1 className="hero-title">
           About <span className="highlight">IGNITE</span>
@@ -17,7 +22,14 @@ const About: React.FC = () => {
 
       <section className="family-section">
         <div className="family-image-container">
-          <img src="/images/IMG_0773.png" alt="IGNITE Family" className="family-image" />
+          <Image 
+            src="/images/IMG_0773.png" 
+            alt="IGNITE Family" 
+            width={1200}
+            height={800}
+            className="family-image"
+            priority
+          />
           <div className="family-overlay">
             <h2 className="family-title">
               Our <span className="highlight">Family</span>
@@ -75,9 +87,9 @@ const About: React.FC = () => {
                 <line x1="45" y1="30" x2="56" y2="30" stroke="#c9a961" strokeWidth="2.5"/>
               </svg>
             </div>
-            <h3 className="vision-title">Vision</h3>
+            <h3 className="vision-title">Mission</h3>
             <p className="vision-text">
-              To be the leading platform where student innovation drives sustainable solutions for global challenges.
+              To empower students through collaborative learning, innovative projects, and leadership development.
             </p>
           </div>
           <div className="vision-card">
@@ -92,9 +104,9 @@ const About: React.FC = () => {
                 <line x1="42" y1="28" x2="52" y2="28" stroke="#c9a961" strokeWidth="2"/>
               </svg>
             </div>
-            <h3 className="vision-title">Vision</h3>
+            <h3 className="vision-title">Values</h3>
             <p className="vision-text">
-              To be the leading platform where student innovation drives sustainable solutions for global challenges.
+              Excellence, integrity, collaboration, and continuous growth in everything we do.
             </p>
           </div>
         </div>
@@ -112,7 +124,12 @@ const About: React.FC = () => {
             className="video-card"
           >
             <div className="video-thumbnail">
-              <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_1/maxresdefault.jpg" alt="Video 1" />
+              <Image 
+                src="https://img.youtube.com/vi/YOUR_VIDEO_ID_1/maxresdefault.jpg" 
+                alt="Video 1"
+                width={640}
+                height={360}
+              />
             </div>
             <div className="video-info">
               <h3 className="video-title">HOD, ESTD<br />Dr. Kavita Bhosale</h3>
@@ -125,7 +142,12 @@ const About: React.FC = () => {
             className="video-card"
           >
             <div className="video-thumbnail">
-              <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID_2/maxresdefault.jpg" alt="Video 2" />
+              <Image 
+                src="https://img.youtube.com/vi/YOUR_VIDEO_ID_2/maxresdefault.jpg" 
+                alt="Video 2"
+                width={640}
+                height={360}
+              />
             </div>
             <div className="video-info">
               <h3 className="video-title">Faculty Co-ordinator<br />Dr. Dipa Dharmadhikari</h3>
@@ -136,5 +158,3 @@ const About: React.FC = () => {
     </div>
   )
 }
-
-export default About

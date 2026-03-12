@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
+
+
 .event-details-page {
   background-color: #0a0e13;
   color: #fff;
@@ -204,6 +207,14 @@
   font-weight: 700;
   margin-bottom: 2rem;
   letter-spacing: 1px;
+}
+
+.section-heading .highlight {
+  color: #F3BD51;
+}
+
+.event-main-title .highlight {
+  color: #F3BD51;
 }
 
 .event-description {
