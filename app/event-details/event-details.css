@@ -1,30 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
 
-
 .event-details-page {
   background-color: #0a0e13;
   color: #fff;
   min-height: 100vh;
   padding-bottom: 4rem;
-}
-
-.back-link {
-  padding: 2rem max(1rem, calc((100vw - 1200px) / 2));
-}
-
-.back-button {
-  font-family: 'Oswald', sans-serif;
-  color: #7d8590;
-  text-decoration: none;
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
-  transition: color 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.back-button:hover {
-  color: #F3BD51;
 }
 
 .event-header-section {
@@ -69,6 +49,10 @@
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   line-height: 1.2;
+}
+
+.event-main-title .highlight {
+  color: #F3BD51;
 }
 
 .event-subtitle {
@@ -133,30 +117,6 @@
   object-fit: cover;
 }
 
-.cta-box-sidebar {
-  background-color: #151a1f;
-  border: 1px solid #2a2f35;
-  border-radius: 14px;
-  padding: clamp(2rem, 4vw, 2.5rem) clamp(1.5rem, 3vw, 2rem);
-  text-align: center;
-}
-
-.cta-title-sidebar {
-  font-family: 'Oswald', sans-serif;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
-  margin-bottom: 0.8rem;
-  color: #fff;
-}
-
-.cta-subtitle-sidebar {
-  font-family: 'Oswald', sans-serif;
-  color: #7d8590;
-  font-size: clamp(0.85rem, 1.5vw, 1rem);
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-}
-
 .register-button-sidebar {
   background-color: transparent;
   color: #F3BD51;
@@ -211,10 +171,6 @@
 }
 
 .section-heading .highlight {
-  color: #F3BD51;
-}
-
-.event-main-title .highlight {
   color: #F3BD51;
 }
 
@@ -321,10 +277,6 @@
     grid-template-columns: 1fr;
   }
 
-  .back-link {
-    padding: 1.5rem 1rem;
-  }
-
   .event-header-section {
     padding: 0 1rem;
   }
@@ -342,11 +294,6 @@
   .rules-coordinators-section,
   .cta-section {
     max-width: 1400px;
-  }
-
-  .back-link {
-    padding-left: max(2rem, calc((100vw - 1400px) / 2));
-    padding-right: max(2rem, calc((100vw - 1400px) / 2));
   }
 
   .event-header-section {

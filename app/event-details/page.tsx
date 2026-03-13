@@ -1,7 +1,6 @@
 'use client'
 
 import Header from '@/components/Header'
-import Link from 'next/link'
 import Image from 'next/image'
 import './event-details.css'
 
