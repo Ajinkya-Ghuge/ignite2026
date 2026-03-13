@@ -9,12 +9,6 @@ export default function EventDetailsPage() {
   return (
     <div className="event-details-page">
       <Header />
-      
-      <div className="back-link">
-        <Link href="/#event" className="back-button">
-          ← Back to Event page
-        </Link>
-      </div>
 
       <div className="event-header-section">
         <div className="event-info-left">

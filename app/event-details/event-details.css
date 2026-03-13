@@ -33,6 +33,7 @@
   gap: clamp(2rem, 5vw, 4rem);
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 4rem;
   padding: 0 max(1rem, calc((100vw - 1200px) / 2));
   margin-bottom: 4rem;
 }
