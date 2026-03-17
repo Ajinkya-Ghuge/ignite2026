@@ -11,20 +11,6 @@ export default function Gallery() {
   const [lightboxIndex, setLightboxIndex] = useState(0)
 
   const heroImages = [
-<<<<<<< HEAD
-    '/images/team4.jpeg',
-    '/images/team5.jpeg',
-    '/images/snapshot2.jpeg',
-    '/images/snapshot1.jpeg',
-    '/images/IMG_4344.jpg',
-  ]
-
-  const galleryImages = [
-    { id: 1, src: '/images/event1.jpeg', category: 'events', alt: 'Event Photo 1' },
-    { id: 2, src: '/images/event2.jpeg', category: 'events', alt: 'Event Photo 2' },
-    { id: 3, src: '/images/team1.png', category: 'team', alt: 'Team Photo 1' },
-    { id: 4, src: '/images/team3.png', category: 'team', alt: 'Team Photo 2' },
-=======
     '/images/gallery1.jpg',
     '/images/gallery2.jpg',
     '/images/gallery3.jpg',
@@ -41,7 +27,6 @@ export default function Gallery() {
     { id: 6, src: '/images/snapshot1.jpeg', category: 'events', alt: 'IGNITE Event Snapshot 1' },
     { id: 7, src: '/images/snapshot2.jpeg', category: 'events', alt: 'IGNITE Event Snapshot 2' },
     { id: 8, src: '/images/snapshot3.jpeg', category: 'events', alt: 'IGNITE Event Snapshot 3' },
->>>>>>> 03e5df014fea534fae57b7716db0ad92ec9ed728
   ]
 
   useEffect(() => {
