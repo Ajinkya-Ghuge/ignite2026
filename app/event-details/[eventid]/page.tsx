@@ -187,9 +187,21 @@ export default function EventDetailsPage() {
               </div>
             )}
 
-            <Link href={`/register?event=${event._id}`} className="register-button-sidebar">
-              Register Now
-            </Link>
+            {/* Modified Register Button - Now links to payment form */}
+            {event.payment_form_url ? (
+              <a 
+                href={event.payment_form_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="register-button-sidebar"
+              >
+                Register Now
+              </a>
+            ) : (
+              <Link href={`/register?event=${event._id}`} className="register-button-sidebar">
+                Register Now
+              </Link>
+            )}
           </div>
         </div>
 
@@ -259,9 +271,22 @@ export default function EventDetailsPage() {
           <div className="cta-box">
             <h3 className="cta-title">Ready to Join?</h3>
             <p className="cta-subtitle">Secure your spot now — limited seats available!</p>
-            <Link href={`/register?event=${event._id}`} className="register-button">
-              Register Now
-            </Link>
+            
+            {/* Modified Register Button - Now links to payment form */}
+            {event.payment_form_url ? (
+              <a 
+                href={event.payment_form_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="register-button"
+              >
+                Register Now
+              </a>
+            ) : (
+              <Link href={`/register?event=${event._id}`} className="register-button">
+                Register Now
+              </Link>
+            )}
           </div>
         </section>
       </div>

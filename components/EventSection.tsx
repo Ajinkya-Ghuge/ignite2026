@@ -205,9 +205,21 @@ export default function EventSection() {
 
                   </div>
 
-                  <Link href={`/register?event=${event._id}`} className="register-btn">
-                    Register Now
-                  </Link>
+                  {/* Modified Register Button - Now links to payment form */}
+                  {event.payment_form_url ? (
+                    <a 
+                      href={event.payment_form_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="register-btn"
+                    >
+                      Register Now
+                    </a>
+                  ) : (
+                    <Link href={`/register?event=${event._id}`} className="register-btn">
+                      Register Now
+                    </Link>
+                  )}
 
                   <Link href={`/event-details/${event._id}`} className="more-details-btn">
                     More Details

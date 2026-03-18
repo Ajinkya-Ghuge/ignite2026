@@ -24,4 +24,5 @@ export interface Event {
   updatedAt: string;
   minTeamSize?: number;  // Add this
   maxTeamSize?: number;  // Add this
+  payment_form_url?: string; // Add this
 }

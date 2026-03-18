@@ -162,9 +162,21 @@ export default function Events() {
                       )}
                     </div>
                     <div className="event-card-actions">
-                      <Link href={`/register?event=${event._id}`} className="btn-register">
-                        Register Now
-                      </Link>
+                      {/* Modified Register Button - Now links to payment form */}
+                      {event.payment_form_url ? (
+                        <a 
+                          href={event.payment_form_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-register"
+                        >
+                          Register Now
+                        </a>
+                      ) : (
+                        <Link href={`/register?event=${event._id}`} className="btn-register">
+                          Register Now
+                        </Link>
+                      )}
                       <Link href={`/event-details/${event._id}`} className="btn-details">
                         Show Details
                       </Link>
