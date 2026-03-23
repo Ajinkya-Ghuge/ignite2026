@@ -146,16 +146,6 @@ export default function EventDetailsPage() {
                 </div>
                 <div className="meta-label">{event.eventvenue || 'TBD'}</div>
               </div>
-
-              <div className="meta-card">
-                <div className="meta-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12" cy="12" r="9" stroke="#F3BD51" strokeWidth="2"/>
-                    <path d="M12 6v6l4 2" stroke="#F3BD51" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                </div>
-                <div className="meta-label">{event.totalRegCount || 0} Registered</div>
-              </div>
             </div>
           </div>
 
